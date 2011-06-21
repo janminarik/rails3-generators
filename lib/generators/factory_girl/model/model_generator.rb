@@ -18,7 +18,7 @@ module FactoryGirl
           raise "Please install Factory_girl or add it to your Gemfile"
         end
         
-        template "fixtures.#{version}.rb", File.join(options[:dir], "#{table_name}.rb")
+        template "fixtures.#{version}.rb", File.join(options[:dir], "#{table_name}_factories.rb")
       end
     end
   end
